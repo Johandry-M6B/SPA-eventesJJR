@@ -1,0 +1,18 @@
+import axios from "axios";
+
+
+export function loaderDashboard() {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (!user) {
+        window.location.href = '/login';
+        return;
+    }
+
+    app.innerHTML = `
+        <h2>Welcome,${user.name} </h2>
+        <button id="logoutBtn">log out</button>
+
+        
+`
+
+}

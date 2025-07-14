@@ -1,5 +1,7 @@
+
+
 export function loaderlogin() {
-  return  `
+  app.innerHTML = `
   <main class="login-container">
     <h2>Sing Up</h2>
     <form id="login-form">
@@ -12,4 +14,31 @@ export function loaderlogin() {
     </div>
 </main>
 `
+
+ 
+  
+}
+
+export function loginRender() {
+  document.getElementById('login-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    try {
+      const {data} = await axios.post(`${users}?email=${email}& password=${password}`,)
+      if(data.length > 0) {
+        localStorage.setItem('user', JSON.stringify(data[0]));
+        window.location.href = '/dashboard';
+      }else {
+        alert('Invalid email or password');
+      }
+
+    } catch (error) {
+      console.error('Error during login:', error);
+      alert('An error occurred during login. Please try again.');
+      
+    }
+  });
 }
