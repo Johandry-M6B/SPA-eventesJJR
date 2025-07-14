@@ -1,4 +1,5 @@
-
+export function loaderRegister() {
+  return `  
 
 <main class="register-container">
     <h2>Register</h2>
@@ -12,3 +13,5 @@
         <p>Already have an account? <a href="/login" data-link>Login</a></p>
     </div>
 </main>
+`
+}

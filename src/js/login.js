@@ -1,5 +1,5 @@
 export function loaderlogin() {
-  return `
+  return  `
   <main class="login-container">
     <h2>Sing Up</h2>
     <form id="login-form">
