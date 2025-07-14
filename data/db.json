@@ -1,0 +1,43 @@
+{
+"users":[
+    {
+        "id":1,
+        "name":"Johandry",
+        "email":"johandry200@hotmail.com ",
+        "password":"123456",
+        "role":"admin"
+        }   
+],
+"events":[
+    {
+        "id":1,
+        "title":"Evento 1",
+        "description":"Descripción del evento 1",
+        "date":"2023-10-01",
+        "location":"Lugar del evento 1"
+    },
+    {
+        "id":2,
+        "title":"Evento 2",
+        "description":"Descripción del evento 2",
+        "date":"2023-10-02",
+        "location":"Lugar del evento 2"
+    }
+],
+    "assignments":[
+        {
+            "id":1,
+            "userId":1,
+            "eventId":1,
+            "role":"organizer"
+        },
+        {
+            "id":2,
+            "userId":1,
+            "eventId":2,
+            "role":"attendee"
+        }
+    ]
+
+
+}
