@@ -1,4 +1,5 @@
-
+import { users } from "../main";
+import axios from "axios";
 
 export function loaderlogin() {
   app.innerHTML = `
@@ -6,7 +7,7 @@ export function loaderlogin() {
     <h2>Sing Up</h2>
     <form id="login-form">
       <input type="email" id="email" placeholder="Email" required />
-      <input type="password" id=""password" placeholder="password" required>
+      <input type="password" id="password" placeholder="password" required>
       <button type="submit">Enter</button>
     </form>
     <div class="links">
@@ -19,15 +20,15 @@ export function loaderlogin() {
   
 }
 
-export function loginRender() {
+ export function loginRender() {
   document.getElementById('login-form').addEventListener('submit', async (event) => {
     event.preventDefault();
-
-    const email = document.getElementById('email').value;
+    const email = document.getElementById('email').value; 
     const password = document.getElementById('password').value;
+    
 
     try {
-      const {data} = await axios.post(`${users}?email=${email}& password=${password}`,)
+      const {data} = await axios.get(`${users}?email=${email}&password=${password}`,)
       if(data.length > 0) {
         localStorage.setItem('user', JSON.stringify(data[0]));
         window.location.href = '/dashboard';

@@ -1,5 +1,5 @@
-import { loaderlogin, loginRender } from "./js/login";
-import { loaderRegister } from "./js/register";
+import { loaderlogin, loginRender} from "./js/login";
+import { loaderRegister, registerRender } from "./js/register";
 
 const routes ={
     '/':{
@@ -14,7 +14,7 @@ const routes ={
     }
     ,'/register':{
         view:loaderRegister,
-        afterLoader:"",
+        afterLoader:registerRender,
         private:false       
 }
 }
