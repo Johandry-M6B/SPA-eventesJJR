@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e8f0fe;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.links{
+  margin-top:1rem;
+  text-align: center;
+}
+.links a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin:0.25rem 0;
+  display: inline-block;
+}
+.links a:hover {
+  text-decoration: underline;
+}

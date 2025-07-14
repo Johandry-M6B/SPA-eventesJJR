@@ -1,10 +1,9 @@
 
-
-.login-container {
+.register-container {
   background: white;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -34,4 +33,12 @@ button {
 button:hover {
   background-color: #29dd38;
 }
+
+.volver {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #f00b04;
+}
+
 
