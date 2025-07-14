@@ -1,4 +1,4 @@
-export function renderlogin() {
+export function loaderlogin() {
   return `
   <main class="login-container">
     <h2>Sing Up</h2>
