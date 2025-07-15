@@ -48,7 +48,7 @@ to bring up the server globally
 2.Install extras
 
     npm install axios
-    npm install sweetalert2
+    
 
 Made with Johandry Julio Rodriguez
 [Links Repositorio](https://github.com/Johandry-M6B/SPA-eventesJJR)
