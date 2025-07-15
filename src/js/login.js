@@ -1,6 +1,6 @@
 import { users } from "../main";
 import axios from "axios";
-
+// Importing axios for making HTTP requests
 export function loaderlogin() {
   app.innerHTML = `
   <main class="login-container">
@@ -19,6 +19,8 @@ export function loaderlogin() {
  
   
 }
+// Render the login form with fields for email and password
+// The form will call the loginRender function when submitted
 
  export function loginRender() {
   document.getElementById('login-form').addEventListener('submit', async (event) => {

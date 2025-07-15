@@ -2,6 +2,10 @@ import { dashboardRender, loaderDashboard } from "./js/dashboard";
 import { loaderlogin, loginRender} from "./js/login";
 import { loaderRegister, registerRender } from "./js/register";
 
+
+// This is the router configuration for the application
+// It defines the routes, their views, and whether they require authentication
+// Each route has a view function that renders the content and an optional afterLoader function for additional
 const routes ={
     '/':{
         view:loaderlogin,
@@ -48,7 +52,7 @@ const routes ={
         private:false
     }
 }
-
+// The router function handles the routing logic
 export function router() {
     const path = window.location.pathname || '/';
     const app = document.getElementById('app');

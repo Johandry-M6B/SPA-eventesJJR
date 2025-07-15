@@ -31,6 +31,7 @@ To installvite dependencies
     npm install -g json-server
 
 To bring up the server globally
+
 2.Start the development server
 
     npm run dev
@@ -39,9 +40,11 @@ To bring up the server globally
 
     json-server --watch database.json --port 3000
 or
+ 
     json-server database.json --port 3000
 
 to bring up the server globally
+
 2.Install extras
 
     npm install axios

@@ -19,7 +19,8 @@ export function loaderRegister() {
 </main>
 `;
 }
-
+// This function handles the registration logic
+// It listens for the form submission, validates the input, and sends a request to register the
 export function registerRender() {
   document.getElementById("register-form")
     .addEventListener("submit", async (event) => {

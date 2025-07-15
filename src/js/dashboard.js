@@ -1,11 +1,14 @@
 import axios from "axios";
 import { events } from "../main";
+//imports of main.js and axios for making HTTP requests
+
 
 
 export function loaderDashboard() {
     const user = JSON.parse(localStorage.getItem('user'));
     if (!user) {
         window.location.href = '/login';
+        // If the user is not logged in, redirect to login page
         return;
     }
 
@@ -43,7 +46,9 @@ export function loaderDashboard() {
 `;
 
 }
-
+// Render the dashboard with a form to create new events
+// The form includes fields for title, description, image URL, date, and location
+// When the form is submitted, it will call the dashboardRender function to handle the event creation
 export function dashboardRender() {
     document.getElementById('event-form').addEventListener('submit', async (event) => {
         event.preventDefault();
