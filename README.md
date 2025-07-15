@@ -24,27 +24,27 @@ This project is a SPA (Single Page Application), event management application th
 ## Start
 1. Install dependencies
 
-npm i
+        npm i
 
 To installvite dependencies
 
-npm install -g json-server
+    npm install -g json-server
 
 To bring up the server globally
 2. Start the development server
 
-npm run dev
+        npm run dev
 
 ## To start the vite host
 
-json-server --watch database.json --port 3000
-or
-json-server database.json --port 3000
+    json-server --watch database.json --port 3000
+    or
+    json-server database.json --port 3000
 
-to bring up the server globally
+    to bring up the server globally
 2. Install extras
 
-npm install axios
-npm install sweetalert2
+        npm install axios
+        npm install sweetalert2
 
-Made with Maria Gabriela Yan
+Made with Johandry Julio Rodriguez
