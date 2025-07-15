@@ -37,20 +37,22 @@ const routes ={
         },
         private:true
     }
-    ,'/dbuser':{
-        view:'loaderDbUser',
-        afterLoader:"dashboardRender",
-        logout:()=> {
-            const logoutBtn = document.getElementById('logoutBtn');
-            if(logoutBtn) {
-                logoutBtn.addEventListener('click', () => {
-                    localStorage.removeItem('admin');
-                    window.location.href = '/login';
-                });
-            }
-        },
-        private:false
-    }
+
+    // Route to the unfinished user view
+    // ,'/dbuser':{
+    //     view:'loaderDbUser',
+    //     afterLoader:"dashboardRender",
+    //     logout:()=> {
+    //         const logoutBtn = document.getElementById('logoutBtn');
+    //         if(logoutBtn) {
+    //             logoutBtn.addEventListener('click', () => {
+    //                 localStorage.removeItem('admin');
+    //                 window.location.href = '/login';
+    //             });
+    //         }
+    //     },
+    //     private:false
+    // }
 }
 // The router function handles the routing logic
 export function router() {
