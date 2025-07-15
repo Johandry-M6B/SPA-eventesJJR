@@ -1,4 +1,4 @@
-SPA Event Manager - eventsMgyp
+## SPA Event Manager - eventsMgyp
 
 This project is a SPA (Single Page Application), event management application that uses DOM, CRUD, Json-Server and Vite. which allows to use:
 
@@ -8,20 +8,20 @@ This project is a SPA (Single Page Application), event management application th
     Logged user display only for administrators (modal window).
     Data persisted using JSON Server as the backend.
 
-Technologies
+## Technologies
 
     Vite
     JavaScript
     Axios
     JSON Server
 
-Instalation
+## Instalation
 
     Open the folder in Visual Studio Code or
     Cloe the repository.
     Install dependencies:
 
-Start
+## Start
 1. Install dependencies
 
 npm i
@@ -35,7 +35,7 @@ To bring up the server globally
 
 npm run dev
 
-To start the vite host
+## To start the vite host
 
 json-server --watch database.json --port 3000
 or
