@@ -30,9 +30,10 @@ export function loaderlogin() {
     try {
       const {data} = await axios.get(`${users}?email=${email}&password=${password}`,)
       if(data.length > 0) {
-        localStorage.setItem('user', JSON.stringify(data[0]));
+        localStorage.setItem('admin', JSON.stringify(data[0]));
         window.location.href = '/dashboard';
-      }else {
+      }
+      else {
         alert('Invalid email or password');
       }
 
