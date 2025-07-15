@@ -22,7 +22,7 @@ This project is a SPA (Single Page Application), event management application th
 - Install dependencies:
 
 ## Start
-1. Install dependencies
+1.Install dependencies
 
     npm i
 
@@ -31,7 +31,7 @@ To installvite dependencies
     npm install -g json-server
 
 To bring up the server globally
-2. Start the development server
+2.Start the development server
 
     npm run dev
 
@@ -42,7 +42,7 @@ or
     json-server database.json --port 3000
 
 to bring up the server globally
-2. Install extras
+2.Install extras
 
     npm install axios
     npm install sweetalert2
